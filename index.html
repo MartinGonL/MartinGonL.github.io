@@ -11,7 +11,7 @@
 
     <title>Lu Nails</title>
 </head>
-<body>
+<body onLoad="principal();">
         <header class="cabezera"></header>
             <div class="contenedorLogo">
             <img class="logo" src="Imagenes/logo.png"> 
@@ -25,7 +25,6 @@
            </ul>
         </header>
         <form >
-        
             <a alt="Anterior" onclick="atras();" ><img src="Imagenes/flecha%20izquierdaa.png" class="botonAnt"></a>
                 
             <a  alt="Siguiente" onclick="adelante();" ><img src="Imagenes/flecha%20derecha.png" class="botonSig"> </a>
@@ -40,7 +39,8 @@
             <div id="contenedor" class="contenedor">
                 
                 <form id="form1">
-                    <img id="imagenPrincipal" alt="" name="principal" >
+                    <img id="imagenPrincipal"  alt="" name="principal" >
+                    
                 </form>
                 
             </div>
@@ -59,26 +59,20 @@
 
                 </ul>
             </div>
-        
 
 
-
-
-
-
-
-    <footer>
+            <footer class="fotIndex">
             
-        <a alt="whasapp"><img src="Imagenes/whatsapp.png" class="whatsapp"></a>
-        <p>266-4896703  </p>
-        <a alt="facebook" href="https://www.facebook.com" target="_blank"><img src="Imagenes/facebook.png" class="facebook"></a>
-        <a alt="instagram" href="https://instagram.com" target="_blank"><img src="Imagenes/instagram.png" id="insta" class="facebook"></a>
-        <p class="direccion">Central Oficial<br>
-            Ciudad de La Punta<br>
-            (5710) San Luis<br>
-            ARGENTINA</p>
-        
-    </footer>
+            <a alt="whasapp"><img src="Imagenes/whatsapp.png" class="whatsapp"></a>
+            <p>266-4896703  </p>
+            <a alt="facebook" href="https://www.facebook.com" target="_blank"><img src="Imagenes/facebook.png" class="facebook"></a>
+            <a alt="instagram" href="https://instagram.com" target="_blank"><img src="Imagenes/instagram.png" id="insta" class="facebook"></a>
+            <p class="direccion">Central Oficial<br>
+                Ciudad de La Punta<br>
+                (5710) San Luis<br>
+                ARGENTINA</p>
+            
+        </footer>
 
-</body>
+        </body>
 </html>

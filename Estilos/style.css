@@ -2,25 +2,23 @@
 
 .cabezera{
     width: 1349px;
-    height: 250px;
+    height: 300px;
     padding-bottom: 0px;
 }
 .contenedorLogo{
     width: 1348px;
-    height: 309px;
-    top: 60px;
+    height: 0px;
+    top: 90px;
     position: absolute;
-    -webkit-box-shadow: inset -1px 39px 14px -16px rgba(0,0,0,0.33);
-    -moz-box-shadow: inset -1px 39px 14px -16px rgba(0,0,0,0.33);
-    box-shadow: inset -1px 39px 14px -16px rgba(0,0,0,0.33);
+    
 }
 .logo{
     z-index: -1;
     width: 600px;
-    height: 200px;
+    height: 260px;
     left: 370px;
     position: absolute;
-    top: 0px;
+    top: -10px;
    
 }
 /**********************MENU**********************/
@@ -34,7 +32,7 @@
     z-index: 1;
     position: fixed;
     top: -150px;
-    background-color: #2B2A2A; 
+    background-color: #ff9e9e; 
     
  }
 .menu li{
@@ -47,7 +45,7 @@
      text-decoration: none;
      padding: 15px;
      margin-left: -4px;
-     background-color: #DAD8D8 ;
+     background-color: #ff9e9e ;
      color: black;
     
   
@@ -74,13 +72,9 @@ BODY{
     width: 1349px;
     height: 720px;
     position: relative;
-    background-color: #DAD8D8;
-    background-image: url(Imagenes/inicio.jpg);
-    background-size: cover;
-    
-    -webkit-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
-    -moz-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
-    box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
+    background-color: #f8caca;         
+    background-size: cover;   
+
     
 }
 .cuerpo h1{
@@ -91,12 +85,60 @@ BODY{
     margin-left: 40px;
     font-weight: bold;
 }
-/*********************Footer*****************/
-.fot{
+.fotIndex{
     
     width: 1349px;
     height: 80px;
     margin-top: 150px;
+    margin-left: -100px;
+}
+p{
+    font-weight: bold;
+    margin-left: 110px;
+    margin-top: -35px;
+    font-family: sans-serif, cursive;
+    color: white;
+}
+.whatsapp{
+    width: 55px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.facebook{
+    
+    width: 55px;
+    height: 55px;
+    margin-left: 250px;
+    margin-top: -37px;
+}
+.facebook:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.15);
+}
+#insta{
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+    margin-top: -37px;
+}
+.direccion{
+    font-weight: bold;
+    margin-left: 1100px;
+    margin-top: -65px;
+    font-family: sans-serif, cursive;
+    color: white;
+}
+/*********************Footer*****************/
+
+.fot{
+    
+    width: 1349px;
+    height: 80px;
+    margin-top: 1500px;
     margin-left: -100px;
 }
 p{
@@ -308,7 +350,6 @@ label{
     position: relative;
     background-color: #DAD8D8;
     margin-top: 47px;
-    background-image: url(Imagenes/fondo.jpg);
     
     -webkit-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
     -moz-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);

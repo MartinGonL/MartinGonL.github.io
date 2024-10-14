@@ -1,5 +1,5 @@
 
-var arrayimg = ['Imagenes/contenedor/imagen3nueva.jpeg','Imagenes/contenedor/imagen2nueva.jpeg','Imagenes/contenedor/imagen1nueva.jpeg','Imagenes/contenedor/imagen4nueva.jpeg','Imagenes/contenedor/imagen5nueva.jpeg','Imagenes/contenedor/imagen6nueva.jpeg','Imagenes/contenedor/imagen7nueva.jpeg','Imagenes/contenedor/imagen8nueva.jpeg','Imagenes/contenedor/imagen9nueva.jpeg','Imagenes/contenedor/imagen10nueva.jpeg'];
+var arrayimg = ['Imagenes/contenedor/imagen1nueva.jpg','Imagenes/contenedor/imagen2nueva.jpg','Imagenes/contenedor/imagen3nueva.jpg','Imagenes/contenedor/imagen4nueva.jpg','Imagenes/contenedor/imagen5nueva.jpg','Imagenes/contenedor/imagen6nueva.jpg','Imagenes/contenedor/imagen7nueva.jpg','Imagenes/contenedor/imagen8nueva.jpg','Imagenes/contenedor/imagen9nueva.jpg','Imagenes/contenedor/imagen10nueva.jpg'];
 
 var n =0;
 function adelante(){
