@@ -32,66 +32,74 @@ function principal(){
     form.principal.setAttribute('src', arrayimg[n]); 
     
 }
+
+
 /*-----------validaciones de forulario-----------*/
+ // Obtener los elementos del formulario
+ const formulario = document.getElementById('formulario');
+ const nombreInput = document.getElementById('nombre');
+ const servicioInput = document.getElementById('servicio');
+ const emailInput = document.getElementById('email'); 
 
-function validar(){
-    var nombre = document.miformulario.nombre.value.trim();
+ // Función para validar el formulario
+ formulario.addEventListener('submit', function(event) {
+     event.preventDefault();
+     let errores = false;
 
-    if(!nombre.match(/^[A-Z a-z\s]+$/) || nombre.length<6){
-        document.miformulario.nombre.focus();
-        alert("nombre invalido");
-        return false;
-    }
-    
-    var telefono = document.miformulario.telefono.value;
-    
-    if(Number.isInteger(telefono)|| telefono.length<10){
-        document.miformulario.telefono.focus();
-        alert("Ingrese solo numeros");
-        
-        return false;
-    } 
-     
-    var c = false;
-   /* var test = document.getElementByName("servicio");*/
-    
-    for(var x=0; x<document.miformulario.servicio.length;x++){
-        if(document.miformulario.servicio[x].checked){
-            c=true;
-            break;
-        }
-    }   
-    if(!c){
-        alert("Seleccione un Servicio");
-        return false;
-    }
-    
-    
-    var op = document.miformulario.manicura.selectedIndex;
-    if(op==-1){
-       alert("Debe ingresar por quien sera atendido");
-            document.miformulario.manicura.focus();
-            return false;
-       }
-    
-    
-    var r = false;
-    
-    for(var i=0;i<document.miformulario.sexo.length;i++){
-        if(document.miformulario.sexo[i].checked){
-            r=true;
-            document.miformulario.sexo.focus();
-            break;
-        }
-    }
-    if(!r){
-        alert("Seleccione Sexo");
-        return false;
-    }
-    
-   return true; 
+     // Validar nombre de usuario
+     if (nombreInput.value == '' || nombreInput.value.length > 20) {
+         document.getElementById('error-nombre').innerHTML = '*campo obligatorio, maximo 20 carracteres';
+         nombreInput.classList.add('error-input');
+         errores = true;
+     } else {
+         document.getElementById('error-nombre').innerHTML = '';
+         nombreInput.classList.remove('error-input');
+     }
 
-}
+     // Validar servicio
+     if (peliculaInput.value== '' || peliculaInput.value.length > 200) {
+         document.getElementById('error-servicio').innerHTML = '*campo obligatorio, maximo 200';
+         peliculaInput.classList.add('error-input');
+         errores = true;
+     } else {
+         document.getElementById('error-servicio').innerHTML = '';
+         peliculaInput.classList.remove('error-input');
+     }
+
+     // Validar email
+     if (emailInput.value !== '') {
+         if (emailInput.value.match (/^[\w-]@(\w-)+(.com(\.ar)|go[vb])$/)) {
+             document.getElementById('error-email').innerHTML = '*El email es inválido';
+             emailInput.classList.add('error-input');
+             errores = true;
+         } else {
+             document.getElementById('error-email').innerHTML = '';
+             emailInput.classList.remove('error-input');
+         }
+     }
+
+     // Mostrar mensaje de éxito
+     if (!errores) {
+         let mensaje = '';        
+           mensaje = `<li>${nombreInput.value} solicita: ${servicioInput.value}. Contacto: ${emailInput.value}</li>`;
+         } 
+         document.getElementById('lista-mensajes').innerHTML += mensaje;
+
+         // Limpiar campos y errores
+         nombreInput.value = '';
+         servicioInput.value = '';         
+         emailInput.value = '';
+         document.getElementById('error-nombre').innerHTML = '';
+         document.getElementById('error-servicio').innerHTML = '';        
+         document.getElementById('error-email').innerHTML = '';
+         nombreInput.classList.remove('error-input');
+         servicioInput.classList.remove('error-input');         
+         emailInput.classList.remove('error-input');
+
+         // Hacer foco en el primer input
+         nombreInput.focus();
+     }
+ });
 
 
 
