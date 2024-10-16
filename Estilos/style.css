@@ -285,7 +285,7 @@ input[type="submit"] {
   }
    .error {
     color: #FF0000; 
-    font-size: 12px;
+    font-size: 16px;
     display: block;
     margin-bottom: 10px;    
   }

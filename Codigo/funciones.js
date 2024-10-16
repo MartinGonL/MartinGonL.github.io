@@ -55,7 +55,7 @@ datoForm.addEventListener('submit', (e) => {
   
 
   if (nombreApellido.value == '' || nombreApellido.value.length < 5 || nombreApellido.value.length > 20) {
-    nombreApellidoError.textContent = 'Por favor, ingrese su nombre y apellido';
+    nombreApellidoError.textContent = 'Por favor, ingrese su nombre y apellido, minimo 5 caracteresy maximo 20';
     errores = false;
   } else {
     nombreApellidoError.textContent = '';
@@ -69,7 +69,7 @@ datoForm.addEventListener('submit', (e) => {
   }
 
   if (email.value == '' || !(/^[\w-]+@[\w-]+\.(com)|(com(\.ar))$/.test(email.value))){
-    emailError.textContent = 'Por favor, ingrese su correo electrónico';
+    emailError.textContent = 'Por favor, ingrese su correo Ej: xxxx@xxxx.com/ar';
     errores = false;
   } else {
     emailError.textContent = '';
