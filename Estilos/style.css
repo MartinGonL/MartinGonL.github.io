@@ -242,15 +242,37 @@ p{
 }
 
 /*------------Formulario---------------*/
-.formulario-container {
+.formulario-container {    
     border: 1px solid black;
-    background-color: #FFC0CB; /* rosa */
+    background-color: #FFC0CB; 
     padding: 20px;
+    
   }
+  label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 30%;
+    
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #d30404;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 15px;
+    
+}
   
   .boton-rojo {
-    background-color: #FF0000; /* rojo */
-    color: #FFFFFF; /* blanco */
+    background-color: #fa0606; 
+    color: #FFFFFF; 
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -258,9 +280,34 @@ p{
   }
   
   .boton-rojo:hover {
-    background-color: #FF0033; /* rojo oscuro */
+    background-color: #fdf9fa;
+    color : black; 
+  }
+   .error {
+    color: #FF0000; 
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;    
+  }
+  /*****DivMensajes******/
+  .h1{
+    font-family: Arial;
+    color: #db0000;
+}
+
+#mensajes {
+    border: solid #d89dff;         
+    padding: 30px; 
+    margin-bottom: 20px; 
   }
 
+  #mensajes ul {
+    list-style: none;
+    padding: 30px; 
+    margin: 10px;
+    font-size: 25px;
+  }
+  
 /*************UL de pagina principal*****************/
 .ofrecemos h2{
     font-size: 25px;
