@@ -73,7 +73,8 @@ BODY{
     height: 720px;
     position: relative;
     background-color: #f8caca;         
-    background-size: cover;   
+    background-size: cover;
+    background-image: url('..//Imagenes/inicio.jpg');   
 
     
 }
@@ -85,6 +86,7 @@ BODY{
     margin-left: 40px;
     font-weight: bold;
 }
+
 .fotIndex{
     
     width: 1349px;
