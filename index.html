@@ -5,74 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="/Estilos/style.css">
-    <link rel="stylesheet" href="/Estilos/norm.css">
+
 
     <script src="/Codigo/funciones.js"></script>
 
     <title>Lu Nails</title>
 </head>
 <body onLoad="principal();">
-        <header class="cabezera"></header>
-            <div class="contenedorLogo">
-            <img class="logo" src="Imagenes/logo.png"> 
+    <header class="cabezera">
+        <div class="contenedorLogo">
+            <img class="logo" src="Imagenes/logo.png">
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="dos.html">Sobre Nosotros</a></li>
+            <li><a href="tres.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <div class="cuerpo">          
+
+        <div class="form-container">
+            <h1>Algunos de nuestros esmaltados</h1>
+            <form id="form1">
+                <img id="imagenPrincipal" alt="" name="principal">
+            </form>
+
+            <div class="navegacion">
+                <a alt="Anterior" onclick="atras();">
+                    <img src="Imagenes/flecha%20izquierdaa.png" class="botonAnt">
+                </a>
+                <a alt="Siguiente" onclick="adelante();">
+                    <img src="Imagenes/flecha%20derecha.png" class="botonSig">
+                </a>
             </div>
-            
-            <ul class="menu">
-                
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="dos.html" >Sobre Nosotros</a></li>
-                <li><a href="tres.html">Contacto</a></li>
-           </ul>
-        </header>
-        <form >
-            <a alt="Anterior" onclick="atras();" ><img src="Imagenes/flecha%20izquierdaa.png" class="botonAnt"></a>
-                
-            <a  alt="Siguiente" onclick="adelante();" ><img src="Imagenes/flecha%20derecha.png" class="botonSig"> </a>
-                
-            </form> 
-            
-            
-        <div class="cuerpo">
-            
-            <h1>Algunos de nuestros esmaltados</h1>  
-            
-            <div id="contenedor" class="contenedor">
-                
-                <form id="form1">
-                    <img id="imagenPrincipal"  alt="" name="principal" >
-                    
-                </form>
-                
-            </div>
-            <div class="ofrecemos">
-            
-                <h2>Nuestros Servicios</h2>
-                <ul>
-                   <li><a href="dos.html#spa">Spa e hidratación de manos y pies</a></li>
-                    <li><a href="dos.html#manoPies">Servicio de belleza de manos y pies</a></li>
-                    <li><a href="dos.html#tradicional">Esmaltado Tradicional</a></li>
-                    <li><a href="dos.html#semipermanente">Esmaltado Semipermante</a></li>
-                    <li><a href="dos.html#semiesculpidas">Esculpidas en Acrilico</a></li>
-                    <li><a href="dos.html#lifting">Lifting de Pestañas</a></li>
-                    <li><a href="dos.html#permanente">Permanente de Pestañas</a></li>
-                    <li><a href="dos.html#tinte">Tinte de Pestañas</a></li>
+        </div>
 
-                </ul>
-            </div>
+        <div class="ofrecemos">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><a href="dos.html#spa">Spa e hidratación de manos y pies</a></li>
+                <li><a href="dos.html#manoPies">Servicio de belleza de manos y pies</a></li>
+                <li><a href="dos.html#tradicional">Esmaltado Tradicional</a></li>
+                <li><a href="dos.html#semipermanente">Esmaltado Semipermante</a></li>
+                <li><a href="dos.html#semiesculpidas">Esculpidas en Acrílico</a></li>
+                <li><a href="dos.html#lifting">Lifting de Pestañas</a></li>
+                <li><a href="dos.html#permanente">Permanente de Pestañas</a></li>
+                <li><a href="dos.html#tinte">Tinte de Pestañas</a></li>
+            </ul>
+        </div>
+    </div>
 
-
-            <footer class="fotIndex">
-            
-            <a alt="whasapp"><img src="Imagenes/whatsapp.png" class="whatsapp"></a>
-            <p>266-4896703  </p>
-            <a alt="facebook" href="https://www.facebook.com" target="_blank"><img src="Imagenes/facebook.png" class="facebook"></a>
-            <a alt="instagram" href="https://instagram.com" target="_blank"><img src="Imagenes/instagram.png" id="insta" class="facebook"></a>
-            <p class="direccion">Central Oficial<br>
-                Ciudad de La Punta<br>
-                (5710) San Luis<br>
-                ARGENTINA</p>
-            
-        </footer>
-
-        </body>
+    <footer class="fotIndex">
+        <a alt="whatsapp"><img src="Imagenes/whatsapp.png" class="whatsapp"></a>
+        <p>266-4896703</p>
+        <a alt="facebook" href="https://www.facebook.com" target="_blank"><img src="Imagenes/facebook.png" class="facebook"></a>
+        <a alt="instagram" href="https://instagram.com" target="_blank"><img src="Imagenes/instagram.png" id="insta" class="facebook"></a>
+        <p class="direccion">Central Oficial<br>
+            Ciudad de La Punta<br>
+            (5710) San Luis<br>
+            ARGENTINA
+        </p>
+    </footer>
+</body>
 </html>

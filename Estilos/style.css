@@ -1,275 +1,211 @@
 /*---------------HEADER---------------------*/
 
-.cabezera{
-    width: 1349px;
+.cabezera {
+    width: 100%;
     height: 300px;
     padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contenedorLogo{
-    width: 1348px;
-    height: 0px;
+
+.contenedorLogo {
+    width: 100%;
+    position: absolute;
     top: 90px;
-    position: absolute;
-    
+    display: flex;
+    justify-content: center;
 }
-.logo{
-    z-index: -1;
+
+.logo {
     width: 600px;
-    height: 260px;
-    left: 370px;
-    position: absolute;
-    top: -10px;
-   
+    height: 200px;
 }
+
 /**********************MENU**********************/
 .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 18px;
     height: 60px;
-    width: 1349px;
-    margin: 150px;
-    left: -150px;
-    text-align: center;
-    z-index: 1;
+    width: 100%;
+    background-color: #ff9e9e;
     position: fixed;
-    top: -150px;
-    background-color: #ff9e9e; 
-    
- }
-.menu li{
-    display: inline;
- }
+    top: 0;
+    z-index: 1;
+}
 
-.menu li a{
-     font-family: sans-serif, cursive;
-     font-size: 20px;
-     text-decoration: none;
-     padding: 15px;
-     margin-left: -4px;
-     background-color: #ff9e9e ;
-     color: black;
-    
-  
- }
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    font-family: sans-serif, cursive;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #ff9e9e;
+    color: black;
+}
 
 .menu li a:hover {
-     background-color: #444444;
-     position: relative;
-     
-     color: #FF00FF;
+    background-color: #444444;
+    color: #FF00FF;
+}
 
- }
 /*******************DIV principales******************/
-BODY{
-
-    background: rgb(129,15,121);
-    background: radial-gradient(circle, rgba(129,15,121,1) 12%, rgba(2,0,36,1) 100%);
-    
+body {
+    background: rgb(129, 15, 121);
+    background: radial-gradient(circle, rgba(129, 15, 121, 1) 12%, rgba(2, 0, 36, 1) 100%);
 }
-.cuerpo{
-    
-    z-index: 0;
-    padding: 100px;
-    width: 1349px;
-    height: 720px;
-    position: relative;
-    background-color: #f8caca;         
-    background-size: cover;
-    background-image: url('..//Imagenes/inicio.jpg');   
 
-    
+.cuerpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 50px;
+    width: 100%;
+    background-color: #f8caca;
+    margin-top: 60px;
 }
-.cuerpo h1{
-    font-family: Arial; 
+
+h1 {
+    font-family: Arial;
     font-size: 30px;
-    margin:-35px;
-    margin-bottom: 60px;
-    margin-left: 40px;
-    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 
-.fotIndex{
-    
-    width: 1349px;
-    height: 80px;
-    margin-top: 150px;
-    margin-left: -100px;
+.form-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
-p{
-    font-weight: bold;
-    margin-left: 110px;
-    margin-top: -35px;
-    font-family: sans-serif, cursive;
-    color: white;
-}
-.whatsapp{
-    width: 55px;
-    height: 55px;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-.facebook{
-    
-    width: 55px;
-    height: 55px;
-    margin-left: 250px;
-    margin-top: -37px;
-}
-.facebook:hover{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.15);
-}
-#insta{
-    width: 55px;
-    height: 55px;
-    margin-left: 30px;
-    margin-top: -37px;
-}
-.direccion{
-    font-weight: bold;
-    margin-left: 1100px;
-    margin-top: -65px;
-    font-family: sans-serif, cursive;
-    color: white;
-}
-/*********************Footer*****************/
 
-.fot{
-    
-    width: 1349px;
-    height: 80px;
-    margin-top: 1500px;
-    margin-left: -100px;
+#form1 {
+    width: 500px;
+    text-align: center; 
 }
-p{
-    font-weight: bold;
-    margin-left: 110px;
-    margin-top: -35px;
-    font-family: sans-serif, cursive;
-    color: white;
-}
-.whatsapp{
-    width: 55px;
-    height: 55px;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-.facebook{
-    
-    width: 55px;
-    height: 55px;
-    margin-left: 250px;
-    margin-top: -37px;
-}
-.facebook:hover{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.15);
-}
-#insta{
-    width: 55px;
-    height: 55px;
-    margin-left: 30px;
-    margin-top: -37px;
-}
-.direccion{
-    font-weight: bold;
-    margin-left: 1100px;
-    margin-top: -65px;
-    font-family: sans-serif, cursive;
-    color: white;
-}
-/*-------------------Galeria de Imagenes con JS------------------*/
 
-#imagenPrincipal{
+.navegacion {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.ofrecemos {
+    margin-left: 20px; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer p {
+    margin: 0; 
+}
+
+.whatsapp, .facebook, #insta {
+    width: 55px;
+    height: 55px;
+}
+
+.facebook:hover {
+    transform: scale(1.25);
+}
+
+.direccion {
+    font-weight: bold;
+    font-family: sans-serif, cursive;
+    color: white;
+    text-align: right;
+}
+
+#imagenPrincipal {
     height: 450px;
     width: 500px;
 }
-.contenedor{
-    margin-top: 0px;
-    width: 520px;
+
+.contenedor {
+    margin-top: 0;
+    width: 520px; 
     height: 470px;
     color: white;
     background-color: #DAD8D8;
     border: 10px black double;
     margin-left: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /
 }
-.botonAnt{
-    z-index: 1;
-    position: relative;
-    top: 400px;
-    left: 6px;
-    width: 40px;
-    height: 40px;
 
-}
-.botonSig{
+.botonAnt {
     z-index: 1;
     position: relative;
-    top: 400px;
-    left: 650px;
+    top: 10px; 
+    left: -70px; /
     width: 40px;
     height: 40px;
-    
 }
-.botonSig:hover{
+
+.botonSig {
+    z-index: 1;
+    position: relative;
+    top: 10px;
+    left: 270px; 
+    width: 40px;
+    height: 40px;
+}
+
+.botonSig:hover, .botonAnt:hover {
     cursor: pointer;
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.25);
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
 }
-.botonAnt:hover{
-    cursor: pointer;
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.25);
+
+#contenedor img {
+    transition: all 0.9s ease; 
 }
-#contenedor img{
-    -webkit-transition:all .9s ease;
+
+#contenedor:hover img {
+    transform: scale(1.25); 
 }
-#contenedor:hover img{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.25);
-}
+
 
 /*------------Formulario---------------*/
-.formulario-container {    
-    border: 1px solid black;
-    background-color: #FFC0CB; 
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    
-  }
-  label {
-    display: block;
+    background-color: #FFC0CB;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label, input, select {
+    width: 80%;
     margin-bottom: 10px;
 }
 
-input {
-    width: 30%;
-    
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
     background-color: #d30404;
     color: #fff;
-    padding: 10px 10px;
     border-radius: 15px;
-    
 }
   
   .boton-rojo {
@@ -320,14 +256,11 @@ input[type="submit"] {
     
 }
 
-.ofrecemos{
+.ofrecemos {
     width: 400px;
-    height: 400px;
-    border: 4px dashed black;
-    margin-left: 800px;
-    margin-top: -450px;
-    z-index: 5;
     background-color: #B6FFFF;
+    padding: 20px;
+    border: 4px dashed black;
 }
 .ofrecemos ul{
     list-style: none;
@@ -344,29 +277,19 @@ input[type="submit"] {
     font-family: Arial;
 }
 /***************DESCRIPCION SOBRE NOSOTROS*****/
-.cuerpoNosotros{
-    z-index: 0;
-    padding: 100px;
-    width: 1349px;
-    height: 1200px;
-    position: relative;
+.cuerpoNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
     background-color: #DAD8D8;
-    margin-top: 47px;
-    
-    -webkit-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
-    -moz-box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
-    box-shadow: inset 1px 35px 19px -18px rgba(59,3,99,1);
 }
 /**************ENCABEZADO**********************/
-.sobreNosotros{
-    font-size: 25px;
-    color: #56008F;
-    margin: 15px;
+.sobreNosotros {
+    width: 100%;
     text-align: center;
-    font-family: Arial;
-    margin-top: -20px;
-    border: 10px double black;
     background-color: #B6FFFF;
+    border: 10px double black;
 }
 #psobreNosotros{
     font-size: 19px;
@@ -380,13 +303,12 @@ input[type="submit"] {
     margin-top: 3px;
 }
 /**************CAJA 1**********************/
-.spa{
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    float:left;
-    margin-left: 100px;
+.spa, .manosPies, .tradicional, .lifting, .esculpidas, .semipermanente, .permanente, .tinte {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
     background-color: #B6FFFF;
+    border: 2px solid black;
 }
 .spa h1{
     font-size: 20px;
@@ -404,14 +326,7 @@ input[type="submit"] {
 }
 /**************CAJA 2**********************/
 
-.manosPies{
-    float:left;
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    margin-left: 150px;
-    background-color: #B6FFFF;
-}
+
 .manosPies h1{
     font-size: 20px;
     color:#BA0404;
@@ -427,15 +342,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 3**********************/
-.tradicional{
-    margin-left: 100px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .tradicional h1{
     font-size: 20px;
     color:#BA0404;
@@ -451,15 +358,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 6**********************/
-.lifting{
-    margin-left: 150px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .lifting h1{
     font-size: 20px;
     color:#BA0404;
@@ -475,15 +374,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 4**********************/
-.semipermanente{
-    margin-left: 150px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 210px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .semipermanente h1{
     font-size: 20px;
     color:#BA0404;
@@ -499,15 +390,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 5**********************/
-.esculpidas{
-    margin-left: 100px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 210px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .esculpidas h1{
     font-size: 20px;
     color:#BA0404;
@@ -523,15 +406,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 7**********************/
-.permanente{
-    margin-left: 100px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .permanente h1{
     font-size: 20px;
     color:#BA0404;
@@ -547,15 +422,7 @@ input[type="submit"] {
     font-family: Arial;  
 }
 /**************CAJA 8**********************/
-.tinte{
-    margin-left: 150px;
-    margin-top: 40px;
-    float:left;
-    width: 400px;
-    height: 150px;
-    border: 2px solid black;
-    background-color: #B6FFFF;
-}
+
 .tinte h1{
     font-size: 20px;
     color:#BA0404;
@@ -570,10 +437,3 @@ input[type="submit"] {
     text-align: center;
     font-family: Arial;  
 }
-
-
-
-
-
-
-
