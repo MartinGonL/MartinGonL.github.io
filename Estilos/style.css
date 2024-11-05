@@ -220,6 +220,7 @@ p{
     background-color: #FFC0CB;
     border: 1px solid black;
     margin: 0 auto;
+    max-width: 60vw;
 }
 form {
     display: flex;
@@ -264,16 +265,18 @@ input[type="submit"] {
     color: #db0000;
 }
 
-#mensajes {
-    border: solid #d89dff;         
-    padding: 30px; 
-    margin-bottom: 20px; 
+#mensajes {         
+   
+    margin-bottom: 20px;
+    display: flex; 
+    min-width: 100px;
+    flex-direction: column;
   }
 
   #mensajes ul {
     list-style: none;
-    padding: 30px; 
-    margin: 10px;
+
+
     font-size: 25px;
   }
   
@@ -310,7 +313,7 @@ input[type="submit"] {
 .cuerpoNosotros {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px;
     background-color: #DAD8D8;
 }
@@ -335,9 +338,8 @@ input[type="submit"] {
 }
 /**************CAJA 1**********************/
 .spa, .manosPies, .tradicional, .lifting, .esculpidas, .semipermanente, .permanente, .tinte {
-    width: 47%;
+    max-width: 47%;
     margin-bottom: 20px;
-    padding: 20px;
     background-color: #B6FFFF;
     border: 2px solid black;   
 }
