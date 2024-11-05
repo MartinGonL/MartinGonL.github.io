@@ -12,12 +12,13 @@
 .contenedorLogo {
     width: 100%;
     position: absolute;
-    top: 90px;
+    top: 110px;
     display: flex;
     justify-content: center;
 }
 
 .logo {
+    position: relative;
     width: 600px;
     height: 200px;
 }
@@ -29,11 +30,11 @@
     align-items: center;
     padding: 18px;
     height: 60px;
-    width: 100%;
-    background-color: #ff9e9e;
-    position: fixed;
+    width: 100%;    
+    position: absolute;
     top: 0;
     z-index: 1;
+    
 }
 
 .menu li {
@@ -42,16 +43,16 @@
 
 .menu li a {
     font-family: sans-serif, cursive;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     padding: 15px;
-    background-color: #ff9e9e;
+    background-color: #ffbbbb;
     color: black;
 }
 
 .menu li a:hover {
-    background-color: #444444;
-    color: #FF00FF;
+    background-color: #ff7777;
+    color: #000000;
 }
 
 /*******************DIV principales******************/
@@ -62,12 +63,13 @@ body {
 
 .cuerpo {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: flex-start; 
     padding: 50px;
-    width: 100%;
+    width: 96%;
     background-color: #f8caca;
     margin-top: 60px;
+    background-image: url('..//Imagenes/inicio.jpg');
 }
 
 h1 {
@@ -81,17 +83,22 @@ h1 {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+   
 }
 
 #form1 {
+    border:solid 10px #ff0077;
+    border-radius: 5px;
     width: 500px;
-    text-align: center; 
+    text-align: center;
+    margin: 0px; 
 }
 
 .navegacion {
     display: flex;
     justify-content: center; 
     margin-top: 10px; 
+    
 }
 
 .ofrecemos {
@@ -100,55 +107,69 @@ h1 {
 
 footer {
     position: relative;
-    bottom: 0;
+    margin-top: 20px;
     width: 100%;
     padding: 20px;
-    background-color: #444;
+    background-color: #f8caca;
     display: flex;
     justify-content: space-between; 
 }
 
-.footer p {
-    margin: 0; 
+p{
+    margin-top: 30px;
+    margin-left: -450px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif, cursive;
+    color: rgb(0, 0, 0);
 }
 
-.whatsapp, .facebook, #insta {
-    width: 55px;
-    height: 55px;
+.whatsapp{
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+} 
+.facebook {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    margin-left: -400px;
+}
+.instagram {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    margin-left: -700px;
+}
+.instagram:hover{
+    transform: scale(1.35);
 }
 
 .facebook:hover {
-    transform: scale(1.25);
+    transform: scale(1.35);
 }
 
 .direccion {
     font-weight: bold;
     font-family: sans-serif, cursive;
-    color: white;
-    text-align: right;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 #imagenPrincipal {
     height: 450px;
     width: 500px;
 }
-
-.contenedor {
-    margin-top: 0;
-    width: 520px; 
-    height: 470px;
-    color: white;
-    background-color: #DAD8D8;
-    border: 10px black double;
-    margin-left: 10px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; /
+#imagenPrincipal:hover{
+    border: solid 5px #ff0077;
+    transform: scale(1.25);
 }
+
 
 .botonAnt {
     z-index: 1;
-    position: relative;
+    position: flex;
+    align-items: center;
     top: 10px; 
     left: -70px; /
     width: 40px;
@@ -157,7 +178,8 @@ footer {
 
 .botonSig {
     z-index: 1;
-    position: relative;
+    position: flex;
+    align-items:  center;
     top: 10px;
     left: 270px; 
     width: 40px;
@@ -169,16 +191,6 @@ footer {
     transform: scale(1.25);
     transition: transform 0.3s ease;
 }
-
-#contenedor img {
-    transition: all 0.9s ease; 
-}
-
-#contenedor:hover img {
-    transform: scale(1.25); 
-}
-
-
 /*------------Formulario---------------*/
 .formulario-container {
     display: flex;
@@ -290,6 +302,7 @@ input[type="submit"] {
     text-align: center;
     background-color: #B6FFFF;
     border: 10px double black;
+    margin-bottom: 15px;
 }
 #psobreNosotros{
     font-size: 19px;
@@ -304,11 +317,11 @@ input[type="submit"] {
 }
 /**************CAJA 1**********************/
 .spa, .manosPies, .tradicional, .lifting, .esculpidas, .semipermanente, .permanente, .tinte {
-    width: 45%;
+    width: 47%;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #B6FFFF;
-    border: 2px solid black;
+    border: 2px solid black;   
 }
 .spa h1{
     font-size: 20px;
