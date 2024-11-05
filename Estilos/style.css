@@ -38,11 +38,12 @@
 }
 
 .menu li {
-    display: inline;
+    display: flex;
 }
 
 .menu li a {
     font-family: sans-serif, cursive;
+    font-display: flex;
     font-size: 30px;
     text-decoration: none;
     padding: 15px;
@@ -63,13 +64,13 @@ body {
 
 .cuerpo {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: flex-start; 
     padding: 50px;
-    width: 96%;
+    width: 100%;
     background-color: #f8caca;
     margin-top: 60px;
-    background-image: url('..//Imagenes/inicio.jpg');
+  
 }
 
 h1 {
@@ -87,6 +88,7 @@ h1 {
 }
 
 #form1 {
+    display: flex;
     border:solid 10px #ff0077;
     border-radius: 5px;
     width: 500px;
@@ -102,60 +104,69 @@ h1 {
 }
 
 .ofrecemos {
-    margin-left: 20px; 
-}
-
-footer {
-    position: relative;
-    margin-top: 20px;
-    width: 100%;
-    padding: 20px;
-    background-color: #f8caca;
+    margin-top: 65px;
+    margin-left: -20px;
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column; 
+    align-items: center;  
 }
 
+footer{
+    display: flex;
+    width: 100%;
+}
+.fot{
+    width: 100%;
+    display: flex;
+}
 p{
-    margin-top: 30px;
-    margin-left: -450px;
-    justify-content: center;
     font-weight: bold;
+    margin-left: 11px;
+    margin-top: 50px;
     font-family: sans-serif, cursive;
-    color: rgb(0, 0, 0);
+    color: white;
 }
-
 .whatsapp{
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-} 
-.facebook {
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-    margin-left: -400px;
+    width: 55px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
-.instagram {
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-    margin-left: -700px;
+.facebook{    
+    width: 55px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.facebook:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.15);
 }
 .instagram:hover{
-    transform: scale(1.35);
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.15);
 }
-
-.facebook:hover {
-    transform: scale(1.35);
+.instagram{
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
-
-.direccion {
+.direccion{
+    display: flex;
     font-weight: bold;
+    text-align: right;
+    margin-top: 30px;
     font-family: sans-serif, cursive;
-    color: rgb(0, 0, 0);
-    text-align: center;
+    color: white;
 }
-
+/*-----------------------------*/
 #imagenPrincipal {
     height: 450px;
     width: 500px;
