@@ -3,7 +3,7 @@
 .cabezera {
     width: 100%;
     height: 300px;
-    padding-bottom: 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,7 @@
     height: 60px;
     width: 100%;    
     position: absolute;
+    margin-top: -10px;
     top: 0;
     z-index: 1;
     
@@ -64,12 +65,9 @@ body {
 
 .cuerpo {
     display: flex;
-    justify-content:space-between;
-    align-items: flex-start; 
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 50px;
-    width: 100%;
-    background-color: #f8caca;
-    margin-top: 60px;
   
 }
 
@@ -78,13 +76,7 @@ h1 {
     font-size: 30px;
     text-align: center;
     margin: 0 0 20px 0;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-   
+    color: #DAD8D8;
 }
 
 #form1 {
@@ -96,14 +88,44 @@ h1 {
     margin: 0px; 
 }
 
-.navegacion {
+.navegacion{
     display: flex;
-    justify-content: center; 
-    margin-top: 10px; 
-    
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;   
+}
+.botonSig {
+    z-index: 1;
+    position: relative;
+    align-items:  center;
+    top: 10px;
+    left: 0px; 
+    width: 40px;
+    height: 40px;
+}
+.botonAnt {
+    z-index: 1;
+    position:relative;
+    align-items: center;
+    top: 10px; 
+    left: 0px; /
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.botonSig:hover, .botonAnt:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
 }
 
 .ofrecemos {
+    width: 100%;
     margin-top: 65px;
     margin-left: -20px;
     display: flex;
@@ -158,14 +180,7 @@ p{
     margin-left: 30px;
     margin-top: 40px;
 }
-.direccion{
-    display: flex;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 30px;
-    font-family: sans-serif, cursive;
-    color: white;
-}
+
 /*-----------------------------*/
 #imagenPrincipal {
     height: 450px;
@@ -177,31 +192,7 @@ p{
 }
 
 
-.botonAnt {
-    z-index: 1;
-    position: flex;
-    align-items: center;
-    top: 10px; 
-    left: -70px; /
-    width: 40px;
-    height: 40px;
-}
 
-.botonSig {
-    z-index: 1;
-    position: flex;
-    align-items:  center;
-    top: 10px;
-    left: 270px; 
-    width: 40px;
-    height: 40px;
-}
-
-.botonSig:hover, .botonAnt:hover {
-    cursor: pointer;
-    transform: scale(1.25);
-    transition: transform 0.3s ease;
-}
 /*------------Formulario---------------*/
 .formulario-container {
     display: flex;
@@ -280,7 +271,7 @@ input[type="submit"] {
 }
 
 .ofrecemos {
-    width: 400px;
+    width: 100%;
     background-color: #B6FFFF;
     padding: 20px;
     border: 4px dashed black;
